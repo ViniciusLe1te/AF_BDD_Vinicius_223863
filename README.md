@@ -1,8 +1,8 @@
 # AF_BDD_Vinicius_223863
 
--- ETAPA 1 --
+##BDD - GHERKIN
 
-Tendo em vista o processo explicado anteriormente, crie um BDD com seu devido Gherkin com base no texto abaixo:
+crie um BDD com seu devido Gherkin com base no texto abaixo:
 
 Imagine que você está planejando alugar um carro para uma viagem. Para facilitar esse processo, uma empresa de locação de carros desenvolveu um sistema com diferentes comportamentos, dependendo das circunstâncias da locação e do cliente.
 
@@ -15,19 +15,21 @@ Esses cenários exemplificam como o sistema de locação de carros responde às 
 Funcionalidade: Sistema de Locação de Carros
 
   Cenário: Locação de carro de luxo com reserva antecipada
-    Dado que um cliente deseja alugar um carro de luxo
-    E o cliente faz uma reserva com pelo menos uma semana de antecedência
-    Quando o cliente confirma a reserva
-    Então o sistema deve oferecer um desconto especial no valor total da locação
+    Given Dado que um cliente deseja alugar um carro de luxo
+    And o cliente faz uma reserva com pelo menos uma semana de antecedência
+    When quando o cliente confirma a reserva
+    Then então o sistema deve oferecer um desconto especial no valor total da locação
 
   Cenário: Locação de carro utilitário com reserva urgente
-    Dado que um cliente necessita alugar um carro utilitário
-    E o cliente não tem reserva prévia
-    Quando o cliente solicita um carro
-    Então o sistema deve encontrar um veículo disponível
-    E o sistema deve processar a locação rapidamente
-    E o custo da locação deve ser mais alto devido à demanda urgente
+    Given dado que um cliente necessita alugar um carro utilitário
+    And o cliente não tem reserva prévia
+    When o cliente solicita um carro
+    Then o sistema deve encontrar um veículo disponível
+    And o sistema deve processar a locação rapidamente
+    And o custo da locação deve ser mais alto devido à demanda urgente
 
-<br>
+##Descrição
+
+  Gherkin é uma linguagem de domínio específico utilizada no desenvolvimento orientado por comportamento (BDD) para descrever o comportamento do software de maneira clara e compreensível para todas as partes interessadas. Utiliza uma sintaxe simples baseada em "Dado, Quando, Então" (Given, When, Then) para criar cenários de teste que podem ser automatizados, facilitando a comunicação entre desenvolvedores e não desenvolvedores.
 
 
